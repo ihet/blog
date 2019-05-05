@@ -1,0 +1,34 @@
+@import "parms";
+@import "~normalize.css";
+
+html{
+  height: 100%;
+  margin: 0 auto;
+  padding:0;
+  background: $background;
+  font-family: "Helvetica Neue", "Arial", "Microsoft YaHei","微软雅黑", serif;
+}
+body{
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  height:100%;
+  display: flex;
+}
+#root{
+  flex:1;
+  display: flex;
+}
+.layout{
+  align-content: stretch;
+  .layout-left{
+    background: #000;
+    color:#fff;
+    width:350px;
+  }
+  .layout-right{
+    padding:48px;
+    box-sizing: border-box;
+  }
+}
